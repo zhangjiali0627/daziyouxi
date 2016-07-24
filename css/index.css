@@ -1,0 +1,99 @@
+html,body{
+	height:100%;
+}
+body{
+	margin:0;
+}
+#scene{
+	width:100%;
+	height:100%;
+	background:url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.box{
+	
+	width:300px;
+	height:110px;
+	margin:auto;
+	text-align: center;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	cursor:pointer;
+}
+.box img{
+	width:300px;
+}
+.guanqia{
+	width:261px;
+	height:80px;
+	position:absolute;
+	right:30px;
+	top:30px;
+	/*background: red;*/
+	display: none;
+	z-index: 100;
+}
+.score,.live,.level{
+	width:70px;
+	height:70px;
+	border:4px solid gold;
+	float: left;
+	margin-right:7px;
+	background:rgba(255,255,255,0.5);
+}
+.height{
+	display: block;
+	width:76px;
+	height:38px;
+	font-size: 20px;
+	font-weight: bold;
+	color:red;
+	line-height:38px;
+	text-align: center;
+}
+.nor{
+	display: block;
+	width:76px;
+	height:38px;
+	font-size: 20px;
+	font-weight: normal;
+	color:#000;
+	line-height:38px;
+	text-align: center;
+}
+.btnbox{
+	width:300px;
+	height:100px;
+	position: absolute;
+	left:30px;
+	top:30px;
+	display: none;
+	z-index: 100;
+}
+.btn{
+	float: right;
+	margin-right:20px;
+	width:70px;
+	height:70px;
+}
+.start{
+	display:none;
+}
+.btn a{
+	display: inline-block;
+	width:70px;
+	height:70px;
+}
+.start a{
+	background:url(../images/start.png) no-repeat center center;
+}
+.new1 a{
+	background:url(../images/new.png) no-repeat center center;
+}
+.presh a{
+	background:url(../images/presh.png) no-repeat center center;
+}
