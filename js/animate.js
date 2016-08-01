@@ -298,10 +298,13 @@ function setCss (obj,attr,val) {
             return getColor(colors);
 
         }
-        if(attr=="scrollTop"||attr=="scrollLeft"){
+         if(attr=='scrollTop'||attr=="scrollLeft"){
             return obj[attr];
         }
 
+        // if(attr=='scrollTop'){
+        //     return obj.scrollTop;
+        // }
 
         return obj.currentStyle?obj.currentStyle[attr]:getComputedStyle(obj,null)[attr];
 
@@ -338,8 +341,9 @@ function setCss (obj,attr,val) {
             case 'borderTopColor':
                 obj.style[attr]=val;
                 break;
-            case "scrollTop":
-                obj.scrollTop=val;
+            case 'scrollTop':
+            case 'scrollLeft':
+                obj[attr] = val;
                 break;
             default:
                 obj.style[attr]=val;
